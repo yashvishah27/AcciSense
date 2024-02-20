@@ -24,3 +24,4 @@ tzdata==2024.1
 virtualenv==20.25.0
 wheel==0.42.0
 opencv-python==4.9.0.80
+pandas==2.2.0
