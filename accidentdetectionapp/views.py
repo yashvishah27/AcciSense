@@ -4,7 +4,8 @@ from .models import *
 from django.shortcuts import render, HttpResponse
 from django.http.response import StreamingHttpResponse
 from accidentdetectionapp.stream import streaming
-from googleplaces import GooglePlaces, types, lang
+#from googleplaces import GooglePlaces, types, lang
+import googlemaps
 import requests
 import json
 import vonage
@@ -67,8 +68,8 @@ def webcam_feed(request):
 
 def maps(request):
     API_KEY = 'AIzaSyBj-F7jxbhMYXYn8WuLwZpnEInBX6S4Dew'
-    google_places = GooglePlaces(API_KEY)
-
+    #google_places = GooglePlaces(API_KEY)
+    gmaps = googlemaps.Client(key=API_KEY)
 # call the function nearby search with
 # the parameters as longitude, latitude,
 # radius and type of place which needs to be searched of
