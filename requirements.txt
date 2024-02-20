@@ -26,3 +26,5 @@ wheel==0.42.0
 opencv-python==4.9.0.80
 pandas==2.2.0
 vonage==3.13.0
+pusher==3.3.2
+googlemaps==4.10.0
