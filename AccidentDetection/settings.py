@@ -138,8 +138,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'yashvishah2957@gmail.com'
-EMAIL_HOST_PASSWORD = 'Rayash@123'
+EMAIL_HOST_USER = 'yashvishahhh@gmail.com'
+EMAIL_HOST_PASSWORD = 'yashvi@123'
 
 # Disable favicon.ico requests
 FAVICON_PATH = os.path.join(BASE_DIR, 'favicon.ico')
