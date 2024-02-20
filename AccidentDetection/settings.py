@@ -12,9 +12,10 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# Build paths inside the project like this: BASE_DIR / 'subdir'.
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -25,8 +26,7 @@ SECRET_KEY = 'django-insecure-!u4++-h74+z=o8+5ho!c2j7k4lflwy&zek9kqt9^^-vb-bk_u(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['accisense.onrender.com', 'www.accisense.onrender.com','accisense-ur6i.onrender.com','www.accisense-ur6i.onrender.com']
-
+ALLOWED_HOSTS = ['accisense.onrender.com', 'www.accisense.onrender.com', 'accisense-ur6i.onrender.com', 'www.accisense-ur6i.onrender.com']
 
 # Application definition
 
@@ -125,20 +125,28 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-# STATIC_ROOT ='/static/'
 
-STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-        os.path.join(BASE_DIR, 'static')
-       ]
+    os.path.join(BASE_DIR, 'static')
+]
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'assests')
+
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'yashvishah2957@gmail.com'
-EMAIL_HOST_PASSWORD = 'yashvi@123'
+EMAIL_HOST_PASSWORD = 'Rayash@123'
 
+# Disable favicon.ico requests
+FAVICON_PATH = os.path.join(BASE_DIR, 'favicon.ico')
+if os.path.exists(FAVICON_PATH):
+    FAVICON_PATH = '/favicon.ico'
+else:
+    FAVICON_PATH = '/path/to/your/default/favicon.ico'
+
+# Add this line to your settings
+PREPEND_WWW = True
