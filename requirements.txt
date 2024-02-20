@@ -28,3 +28,4 @@ pandas==2.2.0
 vonage==3.13.0
 pusher==3.3.2
 googlemaps==4.10.0
+pillow==10.2.0
