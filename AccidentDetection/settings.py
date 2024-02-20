@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-!u4++-h74+z=o8+5ho!c2j7k4lflwy&zek9kqt9^^-vb-bk_u(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['accisense.onrender.com', 'www.accisense.onrender.com']
+ALLOWED_HOSTS = ['accisense.onrender.com', 'www.accisense.onrender.com','accisense-ur6i.onrender.com','www.accisense-ur6i.onrender.com']
 
 
 # Application definition
