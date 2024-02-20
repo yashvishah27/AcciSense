@@ -142,11 +142,11 @@ EMAIL_HOST_USER = 'yashvishahhh@gmail.com'
 EMAIL_HOST_PASSWORD = 'yashvi@123'
 
 # Disable favicon.ico requests
-FAVICON_PATH = os.path.join(BASE_DIR, 'favicon.ico')
-if os.path.exists(FAVICON_PATH):
-    FAVICON_PATH = '/favicon.ico'
-else:
-    FAVICON_PATH = '/path/to/your/default/favicon.ico'
+#FAVICON_PATH = os.path.join(BASE_DIR, 'favicon.ico')
+#if os.path.exists(FAVICON_PATH):
+    #FAVICON_PATH = '/favicon.ico'
+#else:
+    #FAVICON_PATH = '/path/to/your/default/favicon.ico'
 
 # Add this line to your settings
-PREPEND_WWW = True
+#PREPEND_WWW = True
